@@ -1,0 +1,407 @@
+/* général ==================================================*/
+
+body{
+	background-color: #F4E6D9;
+}
+
+.container{
+}
+
+/* navbar ================================================= */
+
+.navbar{
+	background-color: #1C3738 !important;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 1;
+	z-index: 100;
+}
+
+.nav{
+	width: 75%
+}
+@media screen and (max-width: 900px){
+	.nav{
+		display:none;
+	}
+}
+
+.navbar-brand{
+	color: #FE7F2D;
+	margin-left: 20px;
+	font-family: georgia;
+	font-size: x-large;
+	text-align: center;
+}
+
+.navbar-brand:hover{
+	color: #FE7F2D;
+}
+
+
+.nav-item{
+	margin-left: 5%;
+	
+}
+
+.nav-link{
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.nav-link:hover{
+	color: #00B0F0;
+}
+
+#menuNav{
+	display:none;
+}
+@media screen and (max-width: 900px){
+	#menuNav{
+		display:block;
+		float:right;
+		margin-right: 10px;
+	}
+}
+
+
+
+
+/* contenu ================================================= */
+
+#premPartie{
+	margin-top: 50px;
+}
+
+.cp{
+	color: #F4E6D9;
+}
+
+.section{
+	margin-top: 100px;
+}
+
+.gauche, .droite{
+	margin-top: 120px;
+	position: relative;
+}
+
+.gauche .description{
+	width: 50%;
+}
+@media screen and (max-width: 1000px){
+	.gauche .description{
+		width: 100%;
+	}
+}
+
+.droite .description{
+	width: 50%;
+	position: relative;
+	left: 50%;
+}
+@media screen and (max-width: 1000px){
+	.droite .description{
+		width: 100%;
+		left: 0;
+	}
+}
+
+.titreElem{
+	text-align: center;
+	font-family: Montserrat;
+}
+
+.description h4{
+	font-weight: 600;
+}
+
+.gauche p{
+	margin-top: 50px;
+}
+
+.droite p{
+	margin-top: 50px;
+}
+
+.description h5{
+	color: #A6AE8B;
+	font-weight: 600;
+}
+
+.elemDroite h2{
+	margin-right: 20px;
+	margin-left: 55%;
+}
+
+.elemDroite .{
+	margin-right: 20px;
+	margin-left: 55%;
+}
+
+.descGauche p{
+	margin-right: 20px;
+	margin-left: 55%;
+	margin-top: 50px;
+	position: absolute;
+	right: 20px;
+}
+
+.gauche .elem{
+	width: 40%;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	display: flex;
+	align-items: center;
+}
+@media screen and (max-width: 1000px){
+	.gauche .elem{
+		width: 100%;
+		height: 300px;
+		position: static;
+		right: 0;
+		display: flex;
+		justify-content: center;
+		display: none;
+	}
+}
+
+.gauche .elemResp{
+	display: none;
+}
+@media screen and (max-width: 1000px){
+	.gauche .elemResp{
+		width: 100%;
+		height: 300px;
+		position: static;
+		right: 0;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.droite .elem{
+	width: 40%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	display: flex;
+	align-items: center;
+}
+@media screen and (max-width: 1000px){
+	.droite .elem{
+		width: 100%;
+		height: 300px;
+		position: static;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		display: none;
+	}
+}
+
+.droite .elemResp{
+	display: none;
+}
+@media screen and (max-width: 1000px){
+	.droite .elemResp{
+		display: block;
+		width: 100%;
+		height: 300px;
+		position: static;
+		left: 0;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.elem img{
+	height: 250px;
+	border-radius: 50%;
+	justify-content: center;
+}
+
+.droite .elem img{
+	position: absolute;
+	right: 0;
+}
+
+@media screen and (max-width: 1000px){
+	.elem img{
+		height: 250px;
+		position: absolute;
+		margin: 0 auto;
+	}
+}
+
+.elemResp img{
+	height: 250px;
+	margin-top: 20px;
+	border-radius: 50%;
+}
+
+#divCV{
+	margin-top: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#CV{
+	
+}
+
+
+
+
+/* pied de page ================================================= */
+
+footer{
+	background: #A6AE8B;
+	float: bottom;
+	clear: left;
+	height: 100px;
+	margin-top: 130px;
+	margin-bottom: 5px;
+}
+
+#footerLong{
+	margin-left: 50px;
+	margin-top: 30px;
+	width: 70%;
+	float: left;
+}
+@media screen and (max-width: 780px){
+	#footerLong{
+		display: none;
+	}
+}
+
+#footerCourt{
+	display: none;
+}
+@media screen and (max-width: 780px){
+	#footerCourt{
+		display: block;
+		float: left;
+		margin-left: 30%;
+		margin-top: 40px;
+	}
+}
+
+footer a{
+	float: right;
+	margin-top: 20px;
+	margin-right: 10%;
+}
+@media screen and (max-width: 780px){
+	footer a{
+		margin-top: 20px;
+		margin-right: 10%;
+	}
+}
+
+footer a img{
+	width: 60px;
+}
+
+
+
+
+/* Formulaire ---------------------------------------- */
+
+.btn_form{
+	position: fixed;
+	bottom:15px;
+	right:15px;
+	width: 150px;
+	background-color:#555;
+	color: white;
+	padding:16px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+#bouttonF{
+	display: none;
+}
+
+form {
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  width: 550px;
+  height: 600px;
+  position: fixed;
+  bottom: 150px;
+  right: 20px;
+  display: none;
+  z-index: 2;
+}
+form h1 {
+  font-size: 20px;
+}
+form .separation {
+  width: 100%;
+  height: 1px;
+  background-color: #747cdf;
+}
+form .corps-formulaire {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+form .corps-formulaire .groupe {
+  position: relative; /* Pour mettre positionner l’élément dans le flux normal de la page */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+form .corps-formulaire .gauche .groupe input {
+  margin-top: 5px;
+  padding: 10px 5px 10px 30px;
+  border: 1px solid #c9c9c9;
+  outline-color: #747cdf;
+  border-radius: 5px;
+}
+form .corps-formulaire .gauche .groupe i {
+  position: absolute; /* positionné par rapport à son parent le plus proche positionné */
+  left: 0;
+  top: 35px;
+  padding: 9px 8px;
+  color: #747cdf;
+}
+form .corps-formulaire .droite {
+  margin-left: 40px;
+}
+form .corps-formulaire .droite .groupe {
+  height: 100%;
+}
+form .corps-formulaire .droite .groupe textarea {
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 2px solid #747cdf;
+  outline: none;
+  border-radius: 5px;
+  resize: none;
+  height: 72%;
+}
+form .pied-formulaire button {
+  margin-top: 10px;
+  background-color: #747cdf;
+  color: white;
+  font-size: 15px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+form .pied-formulaire button:hover {
+  transform: scale(1.05);
+}
